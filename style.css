@@ -1,0 +1,86 @@
+@font-face {
+  font-family: figtree;
+  src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: figtree-italic;
+  src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+
+html {
+  font-family: figtree;
+
+  background-color: hsl(47, 88%, 63%);
+}
+
+body {
+  display: grid;
+  place-items: center center;
+  min-height: 100vh;
+}
+
+.child {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1.6rem;
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
+  border: 1px solid black;
+
+  margin: 1rem;
+}
+
+.svg {
+  border-radius: 0.6rem;
+  width: 100%;
+}
+
+.greg {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.title a {
+  font-weight: 800;
+  text-decoration: none;
+  color: black;
+}
+
+.title a:hover {
+  color: hsl(47, 88%, 63%);
+  transition: all 0.3s ease-in-out;
+}
+
+.greg p {
+  font-weight: 800;
+  padding-left: 0.5rem;
+}
+
+.greg img {
+  width: 2.5rem;
+}
+
+.tag {
+  font-weight: 800;
+  background-color: hsl(47, 88%, 63%);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  width: fit-content;
+}
+
+.published {
+  font-weight: 600;
+}
+
+.description {
+  color: grey;
+  font-weight: 500;
+  font-size: large;
+}
+
+@media screen and (min-width: 650px) {
+  .child {
+    width: 384px;
+  }
+}
